@@ -1,0 +1,17 @@
+name: mcp-slack
+displayName: Slack MCP Server
+description: MCP server for Slack API integration - manage messages, channels, users, and more
+version: 1.0.0
+author: TAISUN
+license: MIT
+runtime: node
+configSchema:
+  type: object
+  properties:
+    slackBotToken:
+      type: string
+      title: Slack Bot Token
+      description: Your Slack Bot User OAuth Token (starts with xoxb-). Get it from https://api.slack.com/apps
+      secret: true
+  required:
+    - slackBotToken

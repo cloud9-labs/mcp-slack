@@ -1,0 +1,28 @@
+{
+  "name": "@cloud9-labs/mcp-slack",
+  "version": "0.1.0",
+  "description": "MCP server for Slack API - send messages, manage channels, users, and reactions",
+  "type": "module",
+  "main": "./dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "prepare": "npm run build"
+  },
+  "keywords": ["mcp", "slack", "messaging", "ai", "model-context-protocol"],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cloud9-labs/mcp-slack.git"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.26.0",
+    "zod": "^3.24.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.7.0"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  }
+}
